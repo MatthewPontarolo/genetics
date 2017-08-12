@@ -1,2 +1,5 @@
 # genetics
-Simulates changes in phenotypes and genotypes over generations
+Simulates changes in phenotypes and genotypes over generations.
+
+To do:
+- Begin
