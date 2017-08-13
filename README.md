@@ -6,3 +6,5 @@ To do:
     - Needs to hold info for how it changes survival rate and sexual selection as simple % modifiers
     - Gene linkage, simulating genes nearby on same chromosome by tying frequencies together
 - Create text files that get read and processed to set up species and their genes + initial frequencies
+
+- Allow user to set environmental stats, like predation rate and carrying capacity of the environment(food availability)
