@@ -5,7 +5,8 @@ classdef Organism
     
     properties
         sex;
-        genes;
+        genes = Gene("", 1, [], [], []);
+        mated = 0;
     end
     
     methods
@@ -28,7 +29,6 @@ classdef Organism
             else
                 e = 3;
             end
-            obj.genes = Gene("Feathers", e, [1.2 1 .7], [1 1 1], [1 1 1]);
             obj.genes(1,1) = Gene("Feathers", e, [1.2 1 .7], [1 1 1], [1 1 1]);
         end
         
@@ -42,7 +42,7 @@ classdef Organism
             %CURRENT PROBLEM IS THAT 'genes' IS JUST A GENE, NOT AN ARRAY
             %OF GENES
             s = 1;
-            for i = 1:this.genes.size()
+            for i = 1:length(this.genes)
                 s = s * this.genes(i).GetSexualSelection();
             end
         end

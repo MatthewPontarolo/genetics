@@ -26,6 +26,10 @@ classdef Gene
             end
         end
         
+        function e = GetExpression(this)
+           e = this.expression; 
+        end
+        
         function s = GetSexualSelection(this)
            s = this.sexualSelection(this.expression); 
         end
